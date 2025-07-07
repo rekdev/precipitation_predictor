@@ -8,16 +8,16 @@ def get_precipitation_probability_forecast(latitude, longitude):
     weather_data_request = get(api_string)
     weather_data = weather_data_request.json()
 
-    return weather_data["hourly"]["precipitation_probability"]
+    return weather_data["hourly"]
 
 
-def calculate_average(probability_forecast):
+def calculate_average(precipitation_probability):
     probability_sum = 0
-    forecast_hours = len(probability_forecast)
+    forecast_hours = len(precipitation_probability)
 
-    for hour_probability in probability_forecast:
+    for hour_probability in precipitation_probability:
         probability_sum += hour_probability
 
-    probability_averge = probability_sum / forecast_hours
+    probability_average = probability_sum / forecast_hours
 
-    return probability_averge
+    return probability_average
