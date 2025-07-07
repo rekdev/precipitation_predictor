@@ -20,5 +20,4 @@ def calculate_average(precipitation_probability):
 
     probability_average = probability_sum / forecast_hours
 
-    breakpoint()
     return probability_average

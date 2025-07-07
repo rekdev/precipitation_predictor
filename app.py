@@ -29,7 +29,6 @@ city = location_data["city"]
 country = location_data["country"]
 latitude = location_data["lat"]
 longitude = location_data["lon"]
-breakpoint()
 
 probability_forecast = get_precipitation_probability_forecast(
     latitude, longitude)
@@ -40,7 +39,6 @@ time = probability_forecast["time"]
 average = round(calculate_average(precipitation_probability))
 
 while True:
-    breakpoint()
     clear_screen()
     print(f"{city}, {country}: Average precipitation probability: {average}%")
 
