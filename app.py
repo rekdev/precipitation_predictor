@@ -20,7 +20,8 @@ def get_advice(average):
     elif average > 39 and average <= 69:
         print("! > There's a medium chance for raining, watch out and take the necesarly preparations in case you've planned outdoor activities.")
     elif average > 69 and average <= 100:
-        print("! > Take the necesarly preparations, such as carrying an umbrella or raincoat.")
+        print(
+            "! > Take the necesarly preparations, such as carrying an umbrella or raincoat.")
 
 
 location_data = get_location_data()
